@@ -94,6 +94,12 @@ You can use next encoded tokens which work for default env:
 * Admin: eyJzZWNyZXQiOiJzdXBlcl9kdXBlcl9zZWN1cml0eSIsInBheWxvYWQiOiJhZG1pbjo1In0=
 * Alien: eyJzZWNyZXQiOiJzdXBlcl9kdXBlcl9zZWN1cml0eSIsInBheWxvYWQiOiJhbGllbjo2In0= (should be denied)
 
+Using admin example:
+
+```bash
+    curl -i -H "Authorization: Bearer eyJzZWNyZXQiOiJzdXBlcl9kdXBlcl9zZWN1cml0eSIsInBheWxvYWQiOiJhZG1pbjo1In0=" http://127.0.0.1:8080/api/v1/author/1
+```
+
 ## Endpoints
 
 1. Create the Author.
