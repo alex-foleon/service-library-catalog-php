@@ -90,7 +90,8 @@ If you discover any security related issues, please email alex-foleon@example.co
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/alex-foleon/service-library-catalog-php.svg?style=flat-square
-[ico-travis]: https://travis-ci.com/github/alex-foleon/service-library-catalog-php.svg?branch=main
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://travis-ci.com/alex-foleon/service-library-catalog-php.svg?branch=main
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/alex-foleon/service-library-catalog-php.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/alex-foleon/service-library-catalog-php.svg?style=flat-square
 
