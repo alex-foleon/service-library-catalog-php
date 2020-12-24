@@ -1,18 +1,18 @@
 {
-    "name": "timonnorth/service-library-catalog-php",
+    "name": "alex-foleon/service-library-catalog-php",
     "type": "service",
     "description": "Library  catalog",
     "keywords": [
-        "timonnorth",
+        "alex-foleon",
         "service-library-catalog-php"
     ],
-    "homepage": "https://github.com/timonnorth/service-library-catalog-php",
+    "homepage": "https://github.com/alex-foleon/service-library-catalog-php",
     "license": "MIT",
     "authors": [
         {
             "name": ":Oleksandr Ieremeev",
             "email": "fake@email.com",
-            "homepage": "https://github.com/timonnorth",
+            "homepage": "https://github.com/alex-foleon",
             "role": "Developer"
         }
     ],
