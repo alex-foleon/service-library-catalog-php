@@ -32,7 +32,7 @@ Create a book and add an author to it.
 
 Forked from: https://github.com/thephpleague/skeleton
 
-**Note:** Replace ```Oleksandr Ieremeev``` ```timonnorth``` ```https://github.com/timonnorth``` ```timonnorth@example.com``` ```timonnorth``` ```service-library-catalog-php``` `````` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
+**Note:** Replace ```Oleksandr Ieremeev``` ```alex-foleon``` ```https://github.com/alex-foleon``` ```alex-foleon@example.com``` ```alex-foleon``` ```service-library-catalog-php``` `````` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
 PSRs you support to avoid any confusion with users and contributors.
@@ -57,13 +57,13 @@ vendor/
 Via Composer
 
 ``` bash
-$ composer require timonnorth/service-library-catalog-php
+$ composer require alex-foleon/service-library-catalog-php
 ```
 
 ## Usage
 
 ``` php
-$skeleton = new timonnorth\service-library-catalog-php();
+$skeleton = new alex-foleon\service-library-catalog-php();
 echo $skeleton->echoPhrase('Hello, League!');
 ```
 
@@ -83,7 +83,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT
 
 ## Security
 
-If you discover any security related issues, please email timonnorth@example.com instead of using the issue tracker.
+If you discover any security related issues, please email alex-foleon@example.com instead of using the issue tracker.
 
 ## Credits
 
@@ -94,17 +94,17 @@ If you discover any security related issues, please email timonnorth@example.com
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/timonnorth/service-library-catalog-php.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/alex-foleon/service-library-catalog-php.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/timonnorth/service-library-catalog-php/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/timonnorth/service-library-catalog-php.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/timonnorth/service-library-catalog-php.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/timonnorth/service-library-catalog-php.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/alex-foleon/service-library-catalog-php/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/alex-foleon/service-library-catalog-php.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/alex-foleon/service-library-catalog-php.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/alex-foleon/service-library-catalog-php.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/timonnorth/service-library-catalog-php
-[link-travis]: https://travis-ci.org/timonnorth/service-library-catalog-php
-[link-scrutinizer]: https://scrutinizer-ci.com/g/timonnorth/service-library-catalog-php/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/timonnorth/service-library-catalog-php
-[link-downloads]: https://packagist.org/packages/timonnorth/service-library-catalog-php
-[link-author]: https://github.com/timonnorth
+[link-packagist]: https://packagist.org/packages/alex-foleon/service-library-catalog-php
+[link-travis]: https://travis-ci.org/alex-foleon/service-library-catalog-php
+[link-scrutinizer]: https://scrutinizer-ci.com/g/alex-foleon/service-library-catalog-php/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/alex-foleon/service-library-catalog-php
+[link-downloads]: https://packagist.org/packages/alex-foleon/service-library-catalog-php
+[link-author]: https://github.com/alex-foleon
 [link-contributors]: ../../contributors
