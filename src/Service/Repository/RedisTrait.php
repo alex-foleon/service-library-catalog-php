@@ -43,10 +43,7 @@ trait RedisTrait
         $this->lock($predis, $key, $ttl);
         try {
             $res = $closure();
-        } catch (\Exception $e) {
-            $this->unlock($predis, $key);
-            throw $e;
-        } catch (\Throwable $e) {
+        } catch (\Exception | \Throwable $e) {
             $this->unlock($predis, $key);
             throw $e;
         }
