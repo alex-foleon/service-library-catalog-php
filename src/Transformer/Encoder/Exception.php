@@ -17,6 +17,6 @@ class Exception extends AppException
      */
     public function __construct($message = "", $code = 0, ?Throwable $previous = null)
     {
-        parent::__construct($message == '' ? $message : 'Can not encode/decode JSON', $code, $previous);
+        parent::__construct($message ?: 'Can not encode/decode JSON', $code, $previous);
     }
 }

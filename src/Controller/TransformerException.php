@@ -10,6 +10,6 @@ class TransformerException extends AppException
 {
     public function __construct($message = "", $code = 0, ?\Throwable $previous = null)
     {
-        parent::__construct($message == '' ? $message : 'Can not transform object', $code, $previous);
+        parent::__construct($message ?: 'Can not transform object', $code, $previous);
     }
 }

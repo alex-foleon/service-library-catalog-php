@@ -8,6 +8,6 @@ class HttpUnauthorizedException extends AppException
 {
     public function __construct($message = "", $code = 0, ?\Throwable $previous = null)
     {
-        parent::__construct($message == '' ? $message : 'Unauthorized', $code, $previous);
+        parent::__construct($message ?: 'Unauthorized', $code, $previous);
     }
 }

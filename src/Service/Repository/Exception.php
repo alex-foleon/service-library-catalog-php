@@ -10,6 +10,6 @@ class Exception extends AppException
 {
     public function __construct($message = "", $code = 0, ?\Throwable $previous = null)
     {
-        parent::__construct($message == '' ? $message : 'Repository exception', $code, $previous);
+        parent::__construct($message ?: 'Repository exception', $code, $previous);
     }
 }
