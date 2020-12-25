@@ -33,8 +33,16 @@ Create a book and add an author to it.
  * **Transformers and Hydrators**: App has its own "Serializer" which helps encode/decode entities for storing in some repository (document-oriented). Basic transformers for representing data in HTTP-response.  
  * **Controllers**: V1 implements basic json REST, we can add more versions to support other protocols.
 
+## Used Libraries
 
-## Install
+ * **php-di/php-di**: DI container implementation;
+ * **predis/predis**: Redis client;
+ * **rakit/validation**: Library for validation of incoming requests;
+ * **nikic/fast-route**: PHP routing (the foundation of thephpleague/route);
+ * **nyholm/psr7** and **laminas/laminas-httphandlerrunner**: PSR7 implementation (HTTP requests and responses);
+ * **laminas/laminas-permissions-acl**: Classical ZF ACL implementation.
+
+## Installation
 
 To let dockerization's network work on the local machine plz add to your /etc/hosts:
 
