@@ -8,6 +8,6 @@ class HttpBadRequestException extends AppException
 {
     public function __construct($message = "", $code = 0, ?\Throwable $previous = null)
     {
-        parent::__construct($message == '' ?: 'Bad request', $code, $previous);
+        parent::__construct($message == '' ? $message : 'Bad request', $code, $previous);
     }
 }

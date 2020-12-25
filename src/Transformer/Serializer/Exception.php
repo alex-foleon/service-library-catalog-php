@@ -17,6 +17,6 @@ class Exception extends AppException
      */
     public function __construct($message = "", $code = 0, ?Throwable $previous = null)
     {
-        parent::__construct($message == '' ?: 'Can not serialize/deserialize object', $code, $previous);
+        parent::__construct($message == '' ? $message : 'Can not serialize/deserialize object', $code, $previous);
     }
 }
