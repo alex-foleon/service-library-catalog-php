@@ -75,13 +75,8 @@ class Router
                 } catch (\LibraryCatalog\Exception\HttpUnauthorizedException $e) {
                     $response = (new Error($this->container, $request))
                         ->unauthorizedError($this->uri, $e->getMessage());
-                } catch (\Exception $e) {
+                } catch (\Exception | \Throwable $e) {
                     //@todo Log
-                    //throw $e;
-                    $response = (new Error($this->container, $request))->systemError($this->uri);
-                } catch (\Throwable $e) {
-                    //@todo Log
-                    //throw $e;
                     $response = (new Error($this->container, $request))->systemError($this->uri);
                 }
                 break;

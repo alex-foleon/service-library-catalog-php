@@ -205,4 +205,17 @@ abstract class AbstractController
     {
         return $this->container->get('AuthIn');
     }
+
+    /**
+     * @param string $resourceId
+     * @param string $privilege
+     * @return bool
+     * @throws \DI\DependencyException
+     * @throws \DI\NotFoundException
+     */
+    protected function isAllowed(string $resourceId, string $privilege): bool
+    {
+        $acl = $this->getAcl();
+        return $acl->isAllowed($acl->parseUserPayload($this->getAuthIn()->getPayload()), $resourceId, $privilege);
+    }
 }

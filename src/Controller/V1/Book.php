@@ -27,13 +27,7 @@ class Book extends AbstractController
     public function getOneHandler(string $uri, string $id): ResponseInterface
     {
         // Check ACL first.
-        if (
-            !$this->getAcl()->isAllowed(
-                $this->getAcl()->parseUserPayload($this->getAuthIn()->getPayload()),
-                Acl::BOOK,
-                Acl::READ
-            )
-        ) {
+        if (!$this->isAllowed(Acl::BOOK, Acl::READ)) {
             return $this->forbiddenError($uri);
         }
 
@@ -59,13 +53,7 @@ class Book extends AbstractController
     public function postOneHandler(string $uri, array $params): ResponseInterface
     {
         // Check ACL first.
-        if (
-            !$this->getAcl()->isAllowed(
-                $this->getAcl()->parseUserPayload($this->getAuthIn()->getPayload()),
-                Acl::BOOK,
-                Acl::ADD
-            )
-        ) {
+        if (!$this->isAllowed(Acl::BOOK, Acl::ADD)) {
             return $this->forbiddenError($uri);
         }
 

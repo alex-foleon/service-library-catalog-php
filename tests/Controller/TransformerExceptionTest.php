@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Transformer\Encoder;
+namespace Tests\Controller;
 
 use LibraryCatalog\Controller\TransformerException as Exception;
 
